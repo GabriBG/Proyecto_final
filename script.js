@@ -97,14 +97,14 @@ function crearFilaCarros(car, table) {
 }
 
 function editarCarro(carId) {
-  const table = document.getElementById('carsTable');
+  const table = document.getElementById('tablaCarros');
 
   if (table) {
       location.href = "edit.html";
       llenarCampos(carId);
       console.log('Editar carro con ID:', carId);
   } else {
-      console.error("No se encontró el elemento de la tabla (carsTable).");
+      console.error("No se encontró el elemento de la tabla (tablaCarros).");
   }
 }
 
@@ -117,7 +117,7 @@ const carroXPagina = 10;
 let paginaActual = 1;
 
 function actualizarTabla() {
-  const table = document.getElementById('carsTable');
+  const table = document.getElementById('tablaCarros');
   table.innerHTML = '';
 
   const startIndex = (paginaActual - 1) * carroXPagina;
@@ -140,7 +140,7 @@ function actualizarBotonesPaginacion() {
 }
 
 document.addEventListener("DOMContentLoaded", function () {
-  const table = document.getElementById('carsTable');
+  const table = document.getElementById('tablaCarros');
 
   cars.forEach(car => {
     crearFilaCarros(car, table);
@@ -183,7 +183,15 @@ atrasBtn.addEventListener("click", function () {
   window.location.href = "index.html";
 });
 
+function eliminarCarro(carId) {
+  const confirmacion = confirm('¿Estás seguro de que quieres eliminar este carro?');
 
+  if (confirmacion) {
+    console.log('Eliminar carro con ID:', carId);
+  } else {
+    console.log('Cancelado');
+  }
+}
 
 function vistaCrear() {
 location.href = "create.html";

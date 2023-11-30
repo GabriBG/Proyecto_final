@@ -10,42 +10,41 @@
     <title>PROYECTO FINAL</title>
 </head>
 <body>
-    <div class="container">
-        <h2 class="title">Tabla de Carros</h2>
-        <button class="btn btn-primary" id="newCarButton" onclick="vistaCrear()">
-                Nuevo Carro
+    <header class="encabezado">
+        <h1 class="encabezado__titulo">Tabla de Carros</h1>
+    </header>
+
+    <main class="contenedor">
+        <button class="btn btn-primario" id="nuevoCarroBoton" onclick="vistaCrear()">
+            Nuevo Carro
         </button>
 
-        <table class="table" id="carsTable">
+        <table class="tabla" id="tablaCarros">
             <thead>
                 <tr>
-                    <th>ID</th>
-                    <th>Marca</th>
-                    <th>Modelo</th>
-                    <th>Color</th>
-                    <th>Año</th>
-                    <th>Tipo</th>
-                    <th>Acciones</th>
+                    <th class="tabla__encabezado">ID</th>
+                    <th class="tabla__encabezado">Marca</th>
+                    <th class="tabla__encabezado">Modelo</th>
+                    <th class="tabla__encabezado">Color</th>
+                    <th class="tabla__encabezado">Año</th>
+                    <th class="tabla__encabezado">Tipo</th>
+                    <th class="tabla__encabezado">Acciones</th>
                 </tr>
             </thead>
             <tbody>
             </tbody>
         </table>
 
-        <div class="pagination">
-            <button id="Anterior">Anterior</button>
-            <span id="Actual">1</span>
-            <button id="Siguiente">Siguiente</button>
-        </div>
-    </div>
+        <nav class="paginacion">
+            <button class="paginacion__boton" id="Anterior">Anterior</button>
+            <span class="paginacion__actual" id="Actual">1</span>
+            <button class="paginacion__boton" id="Siguiente">Siguiente</button>
+        </nav>
+    </main>
 
-    <div class="modal" id="crearCarroModal">
-        <div class="modal-dialog">
-            <div class="modal-content">
-            </div>
-        </div>
-    </div>
 
-    <script src="script.js"></script>
+    <footer>
+        <script src="script.js"></script>
+    </footer>
 </body>
 </html>

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
@@ -12,80 +12,65 @@
 </head>
 
 <body>
-    <div class="container">
-        <h2 class="title">Editar Carro</h2>
-
-        <form id="editarCarroForm">
-            <div class="form-group">
-                <label for="marca">Marca:</label>
-                <input type="text" id="marca_edit" name="marca_edit" required>
-
+    <div class="contenedor">
+        <h2 class="contenedor__titulo">Editar Carro</h2>
+<br>
+<br>
+        <form class="formulario" id="editarCarroForm">
+            <div class="formulario__grupo">
+                <label for="marca_edit" class="formulario__label">Marca:</label>
+                <input type="text" id="marca_edit" name="marca_edit" class="formulario__input" required>
             </div>
 
-            <div class="form-group">
-                <label for="modelo">Modelo:</label>
-
-                <input type="text" id="modelo_edit" name="modelo_edit" required>
-
+            <div class="formulario__grupo">
+                <label for="modelo_edit" class="formulario__label">Modelo:</label>
+                <input type="text" id="modelo_edit" name="modelo_edit" class="formulario__input" required>
             </div>
 
-            <div class="form-group">
-                <label for="color">Color:</label>
-                <input type="text" id="color_edit" name="color_edit" required>
-
+            <div class="formulario__grupo">
+                <label for="color_edit" class="formulario__label">Color:</label>
+                <input type="text" id="color_edit" name="color_edit" class="formulario__input" required>
             </div>
 
-            <div class="form-group">
-                <label for="ano">Año:</label>
-                <input type="number" id="ano_edit" name="ano_edit" required>
-
+            <div class="formulario__grupo">
+                <label for="ano_edit" class="formulario__label">Año:</label>
+                <input type="number" id="ano_edit" name="ano_edit" class="formulario__input" required>
             </div>
 
-            <div class="form-group">
-                <label for="combustible">Combustible:</label>
-
-                <input type="text" id="combustible_edit" name="combustible_edit" required>
-
+            <div class="formulario__grupo">
+                <label for="combustible_edit" class="formulario__label">Combustible:</label>
+                <input type="text" id="combustible_edit" name="combustible_edit" class="formulario__input" required>
             </div>
 
-            <div class="form-group">
-                <label for="tipo">Tipo:</label>
-
-                <input type="text" id="tipo_edit" name="tipo_edit" required>
-
+            <div class="formulario__grupo">
+                <label for="tipo_edit" class="formulario__label">Tipo:</label>
+                <input type="text" id="tipo_edit" name="tipo_edit" class="formulario__input" required>
             </div>
 
-            <div class="form-group">
-                <label for="capacidad">Capacidad:</label>
-
-                <input type="number" id="capacidad_edit" name="capacidad_edit" required>
-
+            <div class="formulario__grupo">
+                <label for="capacidad_edit" class="formulario__label">Capacidad:</label>
+                <input type="number" id="capacidad_edit" name="capacidad_edit" class="formulario__input" required>
             </div>
 
-            <div class="form-group">
-                <label for="seguridad">Seguridad:</label>
-                <input type="text" id="seguridad_edit" name="seguridad_edit" required>
-
+            <div class="formulario__grupo">
+                <label for="seguridad_edit" class="formulario__label">Seguridad:</label>
+                <input type="text" id="seguridad_edit" name="seguridad_edit" class="formulario__input" required>
             </div>
 
-            <div class="form-group">
-                <label for="transmision">Transmisión:</label>
-
-                <input type="text" id="transmision_edit" name="transmision_edit" required>
-
+            <div class="formulario__grupo">
+                <label for="transmision_edit" class="formulario__label">Transmisión:</label>
+                <input type="text" id="transmision_edit" name="transmision_edit" class="formulario__input" required>
             </div>
 
-            <div class="form-group">
-                <label for="infoentretenimiento">Infoentretenimiento:</label>
-
-                <input type="text" id="infoentretenimiento_edit" name="infoentretenimiento_edit" required>
+            <div class="formulario__grupo">
+                <label for="infoentretenimiento_edit" class="formulario__label">Infoentretenimiento:</label>
+                <input type="text" id="infoentretenimiento_edit" name="infoentretenimiento_edit" class="formulario__input" required>
             </div>
 
-            <div class="form-group">
-                <button type="button" id="guardarEdicion">Guardar Carro</button>
-
-                <button type="button" id="limpiarCampos">Limpiar Campos</button>
-                <button type="button" id="atras">Atrás</button>
+            <div class="formulario__grupo">
+                <button type="button" id="guardarEdicion" class="formulario__boton">Guardar Carro</button>
+                <button type="button" id="limpiarCampos" class="formulario__boton">Limpiar Campos</button>
+                <button type="button" id="atras" class="formulario__boton">Atrás</button>
             </div>
         </form>
     </div>

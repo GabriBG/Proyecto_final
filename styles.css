@@ -1,23 +1,29 @@
-/* Reset de estilos */
+
 body, h1, h2, p, ul, li, button {
     margin: 0;
     padding: 0;
 }
 
-/* Estilos generales */
+
 body {
     font-family: Arial, sans-serif;
 }
 
-.container {
-    max-width: 800px;
-    margin: 0 auto;
+.encabezado {
+    text-align: center;
+    background-color: #f8f9fa;
     padding: 20px;
 }
 
-.title {
+.encabezado__titulo {
     font-size: 24px;
     margin-bottom: 10px;
+}
+
+.contenedor {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
 }
 
 .btn {
@@ -27,30 +33,28 @@ body {
     cursor: pointer;
 }
 
-.btn-primary {
+.btn-primario {
     background-color: #007bff;
     color: #fff;
     border: none;
 }
 
-/* Estilos de la tabla */
-.table {
+.tabla {
     width: 100%;
     border-collapse: collapse;
     margin-top: 20px;
 }
 
-.table th, .table td {
+.tabla__encabezado, .tabla__celda {
     border: 1px solid #dee2e6;
     padding: 8px;
     text-align: left;
 }
 
-.table th {
+.tabla__encabezado {
     background-color: #f8f9fa;
 }
 
-/* Estilos del modal (ajusta según tus necesidades) */
 .modal {
     display: none;
     position: fixed;
@@ -68,12 +72,22 @@ body {
     padding: 20px;
 }
 
-/* Estilos de paginado (ajusta según tus necesidades) */
-.pagination {
+.paginacion {
     margin-top: 20px;
+    text-align: center;
 }
 
-/* Otros estilos específicos según tus necesidades */
+.paginacion__boton {
+    display: inline-block;
+    padding: 5px 10px;
+    font-size: 14px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    margin: 0 5px;
+}
+
 form {
     display: grid;
     gap: 20px;
