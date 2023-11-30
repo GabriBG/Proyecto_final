@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link href="fontawesome/css/fontawesome.css" rel="stylesheet">
+    <link href="fontawesome/css/brands.css" rel="stylesheet">
+    <link href="fontawesome/css/solid.css" rel="stylesheet">
+    <title>PROYECTO FINAL</title>
+</head>
+<body>
+    <div class="container">
+        <h2 class="title">Tabla de Carros</h2>
+        <button class="btn btn-primary" id="newCarButton" onclick="vistaCrear()">
+                Nuevo Carro
+        </button>
+
+        <table class="table" id="carsTable">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Marca</th>
+                    <th>Modelo</th>
+                    <th>Color</th>
+                    <th>Año</th>
+                    <th>Tipo</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+
+        <div class="pagination">
+            <button id="Anterior">Anterior</button>
+            <span id="Actual">1</span>
+            <button id="Siguiente">Siguiente</button>
+        </div>
+    </div>
+
+    <div class="modal" id="crearCarroModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
