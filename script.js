@@ -99,13 +99,10 @@ function crearFilaCarros(car, table) {
 function editarCarro(carId) {
   const table = document.getElementById('tablaCarros');
 
-  if (table) {
       location.href = "edit.html";
       llenarCampos(carId);
       console.log('Editar carro con ID:', carId);
-  } else {
-      console.error("No se encontró el elemento de la tabla (tablaCarros).");
-  }
+
 }
 
 
